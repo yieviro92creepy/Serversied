@@ -1,0 +1,526 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Executor = Instance.new("ScreenGui")
+local OC = Instance.new("TextButton")
+local OC_Roundify_12px = Instance.new("ImageLabel")
+local BG = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local Creds2 = Instance.new("TextButton")
+local Excutor = Instance.new("Frame")
+local Clear = Instance.new("TextButton")
+local Execute = Instance.new("TextButton")
+local RE = Instance.new("TextButton")
+local ScriptHub = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextButton1 = Instance.new("TextButton")
+local R6R15 = Instance.new("TextButton")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local TextBox = Instance.new("TextBox")
+local LExecute = Instance.new("TextButton")
+local Settings = Instance.new("Frame")
+local Troll = Instance.new("Frame")
+local UNBAN = Instance.new("TextButton")
+local BAN = Instance.new("TextButton")
+local KICK = Instance.new("TextButton")
+local B2 = Instance.new("TextButton")
+local B1 = Instance.new("TextButton")
+local B3 = Instance.new("TextButton")
+local FRET = Instance.new("Frame")
+local UNBAN_2 = Instance.new("TextButton")
+local BAN_2 = Instance.new("TextButton")
+local KICK_2 = Instance.new("TextButton")
+
+--Properties:
+
+Executor.Name = "Executor"
+Executor.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Executor.ResetOnSpawn = false
+
+OC.Name = "O/C"
+OC.Parent = Executor
+OC.BackgroundColor3 = Color3.fromRGB(78, 100, 68)
+OC.BackgroundTransparency = 1.000
+OC.BorderSizePixel = 0
+OC.Position = UDim2.new(0.0109990835, 0, 0.925996244, 0)
+OC.Size = UDim2.new(0, 99, 0, 38)
+OC.ZIndex = 2
+OC.Font = Enum.Font.SourceSans
+OC.Text = "Open/Close"
+OC.TextColor3 = Color3.fromRGB(0, 0, 0)
+OC.TextScaled = true
+OC.TextSize = 14.000
+OC.TextWrapped = true
+
+OC_Roundify_12px.Name = "O/C_Roundify_12px"
+OC_Roundify_12px.Parent = OC
+OC_Roundify_12px.Active = true
+OC_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+OC_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OC_Roundify_12px.BackgroundTransparency = 1.000
+OC_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+OC_Roundify_12px.Selectable = true
+OC_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+OC_Roundify_12px.Image = "rbxassetid://3570695787"
+OC_Roundify_12px.ImageColor3 = Color3.fromRGB(78, 100, 68)
+OC_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+OC_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+OC_Roundify_12px.SliceScale = 0.120
+
+BG.Name = "BG"
+BG.Parent = Executor
+BG.BackgroundColor3 = Color3.fromRGB(3, 13, 4)
+BG.BorderColor3 = Color3.fromRGB(18, 18, 18)
+BG.BorderSizePixel = 0
+BG.Position = UDim2.new(0.178428888, 0, -0.013671875, 87)
+BG.Size = UDim2.new(0, 704, 0, 351)
+BG.Visible = false
+
+TextLabel.Parent = BG
+TextLabel.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+TextLabel.BorderColor3 = Color3.fromRGB(15, 15, 15)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.00142045459, 0, -0.000316587277, 0)
+TextLabel.Size = UDim2.new(0, 703, 0, 31)
+TextLabel.Font = Enum.Font.GothamMedium
+TextLabel.Text = "Delta"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 18.000
+TextLabel.TextWrapped = true
+
+Creds2.Name = "Creds2"
+Creds2.Parent = BG
+Creds2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Creds2.BackgroundTransparency = 1.000
+Creds2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Creds2.BorderSizePixel = 0
+Creds2.Position = UDim2.new(0.76831913, 0, 0, 0)
+Creds2.Size = UDim2.new(0, 161, 0, 31)
+Creds2.Font = Enum.Font.Ubuntu
+Creds2.Text = "Others by 06nate09"
+Creds2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Creds2.TextScaled = true
+Creds2.TextSize = 18.000
+Creds2.TextWrapped = true
+
+Excutor.Name = "Excutor"
+Excutor.Parent = BG
+Excutor.BackgroundColor3 = Color3.fromRGB(3, 13, 4)
+Excutor.BorderColor3 = Color3.fromRGB(18, 18, 18)
+Excutor.BorderSizePixel = 0
+Excutor.Position = UDim2.new(0.000872091798, 0, -0.15720807, 87)
+Excutor.Size = UDim2.new(0, 704, 0, 318)
+Excutor.Visible = false
+
+Clear.Name = "Clear"
+Clear.Parent = Excutor
+Clear.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+Clear.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.434738725, 0, 0.873243988, 0)
+Clear.Size = UDim2.new(0, 123, 0, 31)
+Clear.Font = Enum.Font.Ubuntu
+Clear.Text = "CLEAR"
+Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
+Clear.TextSize = 18.000
+Clear.TextWrapped = true
+
+Execute.Name = "Execute"
+Execute.Parent = Excutor
+Execute.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+Execute.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.0127840908, 0, 0.865610361, 0)
+Execute.Size = UDim2.new(0, 150, 0, 36)
+Execute.Font = Enum.Font.Ubuntu
+Execute.Text = "Server Side EXECUTE"
+Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
+Execute.TextSize = 18.000
+Execute.TextWrapped = true
+
+RE.Name = "RE"
+RE.Parent = Excutor
+RE.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+RE.BorderColor3 = Color3.fromRGB(30, 30, 30)
+RE.ClipsDescendants = true
+RE.Position = UDim2.new(0.660364568, 0, 0.87561214, 0)
+RE.Size = UDim2.new(0, 109, 0, 29)
+RE.Font = Enum.Font.Ubuntu
+RE.Text = "Respawn"
+RE.TextColor3 = Color3.fromRGB(255, 255, 255)
+RE.TextSize = 18.000
+RE.TextWrapped = true
+
+ScriptHub.Name = "ScriptHub"
+ScriptHub.Parent = Excutor
+ScriptHub.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+ScriptHub.BorderColor3 = Color3.fromRGB(15, 15, 15)
+ScriptHub.Position = UDim2.new(0.839341879, 0, 0.063723579, 0)
+ScriptHub.Size = UDim2.new(0, 112, 0, 249)
+
+ScrollingFrame.Parent = ScriptHub
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Size = UDim2.new(0, 111, 0, 261)
+
+TextButton1.Name = "TextButton1"
+TextButton1.Parent = ScrollingFrame
+TextButton1.BackgroundColor3 = Color3.fromRGB(3, 13, 4)
+TextButton1.Position = UDim2.new(0.0540540554, 0, 0.0249042138, 0)
+TextButton1.Size = UDim2.new(0, 98, 0, 22)
+TextButton1.Font = Enum.Font.SourceSans
+TextButton1.Text = "Part Spam"
+TextButton1.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton1.TextScaled = true
+TextButton1.TextSize = 14.000
+TextButton1.TextWrapped = true
+
+R6R15.Name = "R6/R15"
+R6R15.Parent = Excutor
+R6R15.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+R6R15.BorderColor3 = Color3.fromRGB(30, 30, 30)
+R6R15.ClipsDescendants = true
+R6R15.Position = UDim2.new(0.832239568, 0, 0.872467518, 0)
+R6R15.Size = UDim2.new(0, 109, 0, 29)
+R6R15.Font = Enum.Font.Ubuntu
+R6R15.Text = "R6/R15"
+R6R15.TextColor3 = Color3.fromRGB(255, 255, 255)
+R6R15.TextSize = 18.000
+R6R15.TextWrapped = true
+
+ScrollingFrame_2.Parent = Excutor
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame_2.BackgroundTransparency = 1.000
+ScrollingFrame_2.Position = UDim2.new(0.0127840908, 0, 0.063723579, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 565, 0, 247)
+
+TextBox.Parent = ScrollingFrame_2
+TextBox.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+TextBox.Size = UDim2.new(0, 565, 0, 406)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = "Put ya dumb script bozo"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+TextBox.TextStrokeColor3 = Color3.fromRGB(95, 95, 95)
+TextBox.TextStrokeTransparency = 0.000
+
+LExecute.Name = "LExecute"
+LExecute.Parent = Excutor
+LExecute.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+LExecute.BorderColor3 = Color3.fromRGB(30, 30, 30)
+LExecute.BorderSizePixel = 0
+LExecute.Position = UDim2.new(0.247012317, 0, 0.856176376, 0)
+LExecute.Size = UDim2.new(0, 97, 0, 41)
+LExecute.Font = Enum.Font.Ubuntu
+LExecute.Text = "Local EXECUTE"
+LExecute.TextColor3 = Color3.fromRGB(255, 255, 255)
+LExecute.TextSize = 18.000
+LExecute.TextWrapped = true
+
+Settings.Name = "Settings"
+Settings.Parent = BG
+Settings.BackgroundColor3 = Color3.fromRGB(3, 13, 4)
+Settings.BorderColor3 = Color3.fromRGB(18, 18, 18)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.000872091798, 0, -0.15720807, 87)
+Settings.Size = UDim2.new(0, 704, 0, 318)
+Settings.Visible = false
+
+Troll.Name = "Troll"
+Troll.Parent = BG
+Troll.BackgroundColor3 = Color3.fromRGB(3, 13, 4)
+Troll.BorderColor3 = Color3.fromRGB(18, 18, 18)
+Troll.BorderSizePixel = 0
+Troll.Position = UDim2.new(0.000872091798, 0, -0.15720807, 87)
+Troll.Size = UDim2.new(0, 704, 0, 318)
+Troll.Visible = false
+
+UNBAN.Name = "UNBAN"
+UNBAN.Parent = Troll
+UNBAN.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+UNBAN.BorderColor3 = Color3.fromRGB(30, 30, 30)
+UNBAN.BorderSizePixel = 0
+UNBAN.Position = UDim2.new(0.0199660063, 0, 0.8575207, 0)
+UNBAN.Size = UDim2.new(0, 123, 0, 31)
+UNBAN.Font = Enum.Font.Ubuntu
+UNBAN.Text = "Un - Ban"
+UNBAN.TextColor3 = Color3.fromRGB(255, 255, 255)
+UNBAN.TextSize = 18.000
+UNBAN.TextWrapped = true
+
+BAN.Name = "BAN"
+BAN.Parent = Troll
+BAN.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+BAN.BorderColor3 = Color3.fromRGB(30, 30, 30)
+BAN.BorderSizePixel = 0
+BAN.Position = UDim2.new(0.0199660063, 0, 0.719155908, 0)
+BAN.Size = UDim2.new(0, 123, 0, 31)
+BAN.Font = Enum.Font.Ubuntu
+BAN.Text = "Ban"
+BAN.TextColor3 = Color3.fromRGB(255, 255, 255)
+BAN.TextSize = 18.000
+BAN.TextWrapped = true
+
+KICK.Name = "KICK"
+KICK.Parent = Troll
+KICK.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+KICK.BorderColor3 = Color3.fromRGB(30, 30, 30)
+KICK.BorderSizePixel = 0
+KICK.Position = UDim2.new(0.218829647, 0, 0.791482985, 0)
+KICK.Size = UDim2.new(0, 123, 0, 31)
+KICK.Font = Enum.Font.Ubuntu
+KICK.Text = "Kick"
+KICK.TextColor3 = Color3.fromRGB(255, 255, 255)
+KICK.TextSize = 18.000
+KICK.TextWrapped = true
+
+B2.Name = "B2"
+B2.Parent = BG
+B2.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+B2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+B2.BorderSizePixel = 0
+B2.Position = UDim2.new(7.96020031e-05, 0, 0.99663806, 0)
+B2.Size = UDim2.new(0, 123, 0, 31)
+B2.Font = Enum.Font.Ubuntu
+B2.Text = "Excutor"
+B2.TextColor3 = Color3.fromRGB(255, 255, 255)
+B2.TextSize = 18.000
+B2.TextWrapped = true
+
+B1.Name = "B1"
+B1.Parent = BG
+B1.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+B1.BorderColor3 = Color3.fromRGB(30, 30, 30)
+B1.BorderSizePixel = 0
+B1.Position = UDim2.new(0.196102336, 0, 0.999487042, 0)
+B1.Size = UDim2.new(0, 123, 0, 31)
+B1.Font = Enum.Font.Ubuntu
+B1.Text = "Settings"
+B1.TextColor3 = Color3.fromRGB(255, 255, 255)
+B1.TextSize = 18.000
+B1.TextWrapped = true
+
+B3.Name = "B3"
+B3.Parent = BG
+B3.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+B3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+B3.BorderSizePixel = 0
+B3.Position = UDim2.new(0.394965976, 0, 0.999487042, 0)
+B3.Size = UDim2.new(0, 123, 0, 31)
+B3.Font = Enum.Font.Ubuntu
+B3.Text = "Admin"
+B3.TextColor3 = Color3.fromRGB(255, 255, 255)
+B3.TextSize = 18.000
+B3.TextWrapped = true
+
+FRET.Name = "FRET"
+FRET.Parent = BG
+FRET.BackgroundColor3 = Color3.fromRGB(3, 13, 4)
+FRET.BorderColor3 = Color3.fromRGB(18, 18, 18)
+FRET.BorderSizePixel = 0
+FRET.Position = UDim2.new(0.000872091798, 0, -0.15720807, 87)
+FRET.Size = UDim2.new(0, 704, 0, 318)
+FRET.Visible = false
+
+UNBAN_2.Name = "UNBAN"
+UNBAN_2.Parent = FRET
+UNBAN_2.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+UNBAN_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+UNBAN_2.BorderSizePixel = 0
+UNBAN_2.Position = UDim2.new(0.0199660063, 0, 0.8575207, 0)
+UNBAN_2.Size = UDim2.new(0, 123, 0, 31)
+UNBAN_2.Font = Enum.Font.Ubuntu
+UNBAN_2.Text = "Un - Ban"
+UNBAN_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+UNBAN_2.TextSize = 18.000
+UNBAN_2.TextWrapped = true
+
+BAN_2.Name = "BAN"
+BAN_2.Parent = FRET
+BAN_2.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+BAN_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+BAN_2.BorderSizePixel = 0
+BAN_2.Position = UDim2.new(0.0199660063, 0, 0.719155908, 0)
+BAN_2.Size = UDim2.new(0, 123, 0, 31)
+BAN_2.Font = Enum.Font.Ubuntu
+BAN_2.Text = "Ban"
+BAN_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+BAN_2.TextSize = 18.000
+BAN_2.TextWrapped = true
+
+KICK_2.Name = "KICK"
+KICK_2.Parent = FRET
+KICK_2.BackgroundColor3 = Color3.fromRGB(33, 43, 29)
+KICK_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+KICK_2.BorderSizePixel = 0
+KICK_2.Position = UDim2.new(0.218829647, 0, 0.791482985, 0)
+KICK_2.Size = UDim2.new(0, 123, 0, 31)
+KICK_2.Font = Enum.Font.Ubuntu
+KICK_2.Text = "Kick"
+KICK_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+KICK_2.TextSize = 18.000
+KICK_2.TextWrapped = true
+
+-- Scripts:
+
+local function ODKH_fake_script() -- OC.LocalScript 
+	local script = Instance.new('LocalScript', OC)
+
+	isopen = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		print("Thanks for using Delta Excutor," , game.Players.LocalPlayer.DisplayName )
+		if isopen == false then
+			isopen = true
+			script.Parent.Parent.BG.Visible = true
+		else
+			isopen = false
+			script.Parent.Parent.BG.Visible = false
+		end
+	end)
+end
+coroutine.wrap(ODKH_fake_script)()
+local function XXZETM_fake_script() -- Creds2.LocalScript 
+	local script = Instance.new('LocalScript', Creds2)
+
+	while wait(2) do
+		script.Parent.Text = "Others by 06nate09"
+		wait(2)
+		script.Parent.Text = "excutor UI by Actyrn "
+		wait(2)
+		script.Parent.Text = "Scripting by 06nate09"
+		wait(2)
+		script.Parent.Text = "THANKS FOR USING THIS!!!!"
+		--End
+	end
+end
+coroutine.wrap(XXZETM_fake_script)()
+local function OEZARB_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	local button = script.Parent
+	local text = script.Parent.Parent:WaitForChild("ScrollingFrame").TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		text.Text = ""
+	end)
+end
+coroutine.wrap(OEZARB_fake_script)()
+local function ZHWQ_fake_script() -- Execute.Script 
+	local script = Instance.new('Script', Execute)
+
+	remote = script.Parent.ExecuteScript
+	
+	remote.OnServerEvent:Connect(function(idk, lol)
+		require(script.Loadstring)(lol)()
+	end)
+end
+coroutine.wrap(ZHWQ_fake_script)()
+local function FWOKP_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local button = script.Parent
+	local text = script.Parent.Parent.ScrollingFrame.TextBox
+	local remote = script.Parent.ExecuteScript
+	
+	button.MouseButton1Click:Connect(function()
+		remote:FireServer(text.Text)
+	end)
+end
+coroutine.wrap(FWOKP_fake_script)()
+local function LWCPBZZ_fake_script() -- RE.LocalScript 
+	local script = Instance.new('LocalScript', RE)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:Remove()
+	end)
+end
+coroutine.wrap(LWCPBZZ_fake_script)()
+local function LTBLS_fake_script() -- ScrollingFrame.LocalScript 
+	local script = Instance.new('LocalScript', ScrollingFrame)
+
+	
+	
+	script.Parent.TextButton1.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.ScrollingFrame.TextBox.Text = script.Parent.TextButton1.Value.Value
+	end)
+	
+	
+end
+coroutine.wrap(LTBLS_fake_script)()
+-- LExecute.Script is disabled.
+local function QBUMME_fake_script() -- LExecute.LocalScript 
+	local script = Instance.new('LocalScript', LExecute)
+
+	local button = script.Parent
+	local text = script.Parent.Parent.ScrollingFrame.TextBox
+	local remote = script.Parent.ExecuteScript
+	
+	button.MouseButton1Click:Connect(function()
+		--remote:FireServer(text.Text)
+		require(script.Loadstring)(text.Text)()
+	end)
+end
+coroutine.wrap(QBUMME_fake_script)()
+local function MSVV_fake_script() -- BG.TaskBarHandler 
+	local script = Instance.new('LocalScript', BG)
+
+	script.Parent.B1.MouseButton1Click:Connect(function()
+		script.Parent.Excutor.Visible = false
+		script.Parent.Settings.Visible = true
+		script.Parent.Troll.Visible = false
+	end)
+	
+	script.Parent.B2.MouseButton1Click:Connect(function()
+		script.Parent.Excutor.Visible = true
+		script.Parent.Settings.Visible = false
+		script.Parent.Troll.Visible = false
+	end)
+	
+	script.Parent.B3.MouseButton1Click:Connect(function()
+		script.Parent.Excutor.Visible = false
+		script.Parent.Settings.Visible = false
+		script.Parent.Troll.Visible = true
+	end)
+	
+end
+coroutine.wrap(MSVV_fake_script)()
+local function WXIJN_fake_script() -- UNBAN_2.LocalScript 
+	local script = Instance.new('LocalScript', UNBAN_2)
+
+	local button = script.Parent
+	local text = script.Parent.Parent.ScrollingFrame.TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		text.Text = ""
+	end)
+end
+coroutine.wrap(WXIJN_fake_script)()
+local function JESRSN_fake_script() -- BAN_2.LocalScript 
+	local script = Instance.new('LocalScript', BAN_2)
+
+	local button = script.Parent
+	local text = script.Parent.Parent.ScrollingFrame.TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		text.Text = ""
+	end)
+end
+coroutine.wrap(JESRSN_fake_script)()
+local function QLMLCLH_fake_script() -- KICK_2.LocalScript 
+	local script = Instance.new('LocalScript', KICK_2)
+
+	local button = script.Parent
+	local text = script.Parent.Parent.ScrollingFrame.TextBox
+	
+	button.MouseButton1Click:Connect(function()
+		text.Text = ""
+	end)
+end
+coroutine.wrap(QLMLCLH_fake_script)()
